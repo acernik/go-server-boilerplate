@@ -10,7 +10,7 @@ type Config struct {
 		Port     string `env:"DATABASE_PORT" envDefault:"3307"`
 		User     string `env:"DATABASE_USER" envDefault:"user"`
 		Password string `env:"DATABASE_PASSWORD" envDefault:"password"`
-		Name     string `env:"DATABASE_NAME" envDefault:"norddb"`
+		Name     string `env:"DATABASE_NAME" envDefault:"testdb"`
 	}
 	App struct {
 		Port       string `env:"APP_PORT" envDefault:":8080"`
