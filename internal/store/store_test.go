@@ -7,13 +7,15 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/stretchr/testify/suite"
-	"github.com/testcontainers/testcontainers-go/modules/mysql"
-
 	"github.com/acernik/go-server-boilerplate/internal/app"
 	srvmodel "github.com/acernik/go-server-boilerplate/internal/service/model"
 	"github.com/acernik/go-server-boilerplate/internal/store"
 	"github.com/acernik/go-server-boilerplate/internal/testutil"
+
+	"github.com/brianvoe/gofakeit/v7"
+	"github.com/stretchr/testify/suite"
+	"github.com/testcontainers/testcontainers-go"
+	"github.com/testcontainers/testcontainers-go/modules/mysql"
 )
 
 type StoreTestSuite struct {
